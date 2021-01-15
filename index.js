@@ -15,9 +15,9 @@ const titleCased = () => {
   return text
 }
 
-let text = tutorials.map(function (tutorial) {
+let text = tutorials.map(tutorial => {
     let strArr = tutorial.split(" ")
-    let upperCase = strArr.map(function (str) {
+    let upperCase = strArr.map(str => {
         return str.charAt(0).toUpperCase() + str.substring(1, str.length)
     })
     let joined = upperCase.join(' ')
